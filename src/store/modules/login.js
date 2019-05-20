@@ -38,6 +38,7 @@ const login = {
           sessionStorage.setItem("id", res.data.id)
           sessionStorage.setItem("loginname", res.data.loginname)
           sessionStorage.setItem("success", res.data.success)
+          sessionStorage.setItem("accesstoken", accesstoken)
           commit("login", res.data)
         })
     }
